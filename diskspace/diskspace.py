@@ -44,6 +44,7 @@ def bytes_to_readable(blocks):
     byts = blocks * 512
     readable_bytes = byts
     count = 0
+
     while readable_bytes / 1024:
         readable_bytes /= 1024
         count += 1
