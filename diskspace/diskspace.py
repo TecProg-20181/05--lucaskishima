@@ -55,6 +55,7 @@ def bytes_to_readable(blocks):
 
 def print_tree(file_tree, file_tree_node, path, largest_size, total_size,
                depth=0):
+
     percentage = int(file_tree_node['size'] / float(total_size) * 100)
 
     if percentage < args.hide:
